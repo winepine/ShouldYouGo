@@ -19,21 +19,21 @@ export default function Home() {
         position: "top",
       });
     }
-    if (name === "abrar") {
+    if (name.toLowerCase() === "abrar") {
       setLoading(true);
       setTimeout(() => {
         localStorage.setItem("fytresult", "Yes & Fuck U");
         router.push("/result");
         // setLoading(false);
       }, 2000);
-    } else if (name === "afaq") {
+    } else if (name.toLocaleLowerCase() === "afaq") {
       setLoading(true);
       setTimeout(() => {
         localStorage.setItem("fytresult", "Ask Shah G For Permission");
         router.push("/result");
         // setLoading(false);
       }, 2000);
-    } else if (name === "baingan") {
+    } else if (name.toLocaleLowerCase() === "baingan") {
       setLoading(true);
       setTimeout(() => {
         localStorage.setItem("fytresult", "No Baingan");
