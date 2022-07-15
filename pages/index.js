@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Input, Stack } from "@chakra-ui/react";
+import { Box, Button, Heading, Input, Stack, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import { useToast } from "@chakra-ui/react";
 import { useState } from "react";
@@ -63,6 +63,7 @@ export default function Home() {
       </Head>
       <Stack p={10} justifyContent="center" alignItems="center">
         <Heading>Should You Go? (FYT)</Heading>
+        <Text>Dobara Ni Aega</Text>
         <Input
           value={name}
           onChange={({ target }) => setName(target.value)}
